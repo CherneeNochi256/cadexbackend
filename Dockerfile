@@ -10,7 +10,7 @@ RUN ./gradlew bootJar --no-daemon
 
 FROM openjdk:17-jdk-slim
 
-EXPOSE ${PORT}
+EXPOSE 8080
 
 COPY --from=build /build/libs/cadex-change-test-task-backend-0.0.1-SNAPSHOT.jar app.jar
 
