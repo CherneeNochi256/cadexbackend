@@ -5,10 +5,11 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("api/v1")
-@CrossOrigin("http://localhost:3000")
+@CrossOrigin("https://cadexfrontend.vercel.app")
 public class TriangulationController {
 
     private final TriangulationService service;
